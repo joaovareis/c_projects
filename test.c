@@ -20,7 +20,11 @@ typedef i32 b32;
 
 int main() {
 
-    for (i8 i = -1; i<2; i++) {
-        printf("%d\n", i);
+    int myNumbers[] = {10, 20, 30, 40, 50};
+    int length = sizeof(myNumbers) / sizeof(myNumbers[0]); // Calculate length
+
+    for (int i = 0; i < 5; i++) {
+        printf("%d\n", myNumbers[i]);
     }
+    return 0;
 }
